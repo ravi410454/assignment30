@@ -5,7 +5,7 @@
     <packaging>war</packaging>
     <groupId>org.cognizant</groupId>
     <artifactId>assignment30</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>assignment30</name>
     <description>Assignment 28 maven build for Spring Boot</description>
 
