@@ -1,7 +1,7 @@
-package org.cognizant.assignment28.controller;
+package org.cognizant.assignment30.controller;
 
-import org.cognizant.assignment28.api.Book;
-import org.cognizant.assignment28.repo.BookRepository;
+import org.cognizant.assignment30.api.Book;
+import org.cognizant.assignment30.repo.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
@@ -32,8 +32,8 @@ public class BookController {
     public String add(@RequestParam long bookId, @RequestParam String title, @RequestParam double price,
                       @RequestParam int volume, @RequestParam String publishDate) {
         Book book = new Book(bookId, title, price, volume, LocalDate.parse(publishDate, DateTimeFormatter.ISO_DATE));
-        bookRepository.save(book);
-        return "Successfully Added " + book;
+        Book saved = bookRepository.save(book);
+        return "Successfully Added: " + saved;
     }
 
     @RequestMapping(value = "book/delete", method = RequestMethod.GET)

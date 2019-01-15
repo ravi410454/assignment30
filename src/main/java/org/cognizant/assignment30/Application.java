@@ -1,4 +1,4 @@
-package org.cognizant.assignment28;
+package org.cognizant.assignment30;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

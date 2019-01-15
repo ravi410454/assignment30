@@ -1,9 +1,9 @@
-package org.cognizant.assignment28.controller;
+package org.cognizant.assignment30.controller;
 
-import org.cognizant.assignment28.api.SubBookIdentity;
-import org.cognizant.assignment28.api.Subject;
-import org.cognizant.assignment28.repo.BookRepository;
-import org.cognizant.assignment28.repo.SubjectRepository;
+import org.cognizant.assignment30.api.SubBookIdentity;
+import org.cognizant.assignment30.api.Subject;
+import org.cognizant.assignment30.repo.BookRepository;
+import org.cognizant.assignment30.repo.SubjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
@@ -44,8 +44,8 @@ public class SubjectController {
     public String add(@RequestParam long subjectId, @RequestParam String subTitle, @RequestParam int duration,
                       @RequestParam long bookId) {
         Subject subject = new Subject(new SubBookIdentity(subjectId, bookId), subTitle, duration);
-        subjectRepository.save(subject);
-        return "Successfully Added " + subject;
+        Subject saved = subjectRepository.save(subject);
+        return "Successfully Added: " + saved;
     }
 
     @RequestMapping(value = "subject/delete", method = RequestMethod.GET)

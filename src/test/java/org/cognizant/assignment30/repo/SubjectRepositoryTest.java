@@ -1,7 +1,7 @@
-package org.cognizant.repo;
+package org.cognizant.assignment30.repo;
 
-import org.cognizant.api.SubBookIdentity;
-import org.cognizant.api.Subject;
+import org.cognizant.assignment30.api.SubBookIdentity;
+import org.cognizant.assignment30.api.Subject;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

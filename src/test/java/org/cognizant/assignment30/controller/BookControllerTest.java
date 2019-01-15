@@ -1,7 +1,7 @@
-package org.cognizant.controller;
+package org.cognizant.assignment30.controller;
 
-import org.cognizant.api.Book;
-import org.cognizant.repo.BookRepository;
+import org.cognizant.assignment30.api.Book;
+import org.cognizant.assignment30.repo.BookRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

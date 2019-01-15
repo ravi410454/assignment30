@@ -1,6 +1,6 @@
-package org.cognizant.assignment28.repo;
+package org.cognizant.assignment30.repo;
 
-import org.cognizant.assignment28.api.Subject;
+import org.cognizant.assignment30.api.Subject;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;

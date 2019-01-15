@@ -1,4 +1,4 @@
-package org.cognizant.assignment28.api;
+package org.cognizant.assignment30.api;
 
 import javax.persistence.Embeddable;
 import javax.validation.constraints.NotNull;

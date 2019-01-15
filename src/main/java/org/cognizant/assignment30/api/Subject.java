@@ -1,4 +1,4 @@
-package org.cognizant.assignment28.api;
+package org.cognizant.assignment30.api;
 
 import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
